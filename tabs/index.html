@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Loading</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app">
+        
+        <div ng-controller="tabContentCrtl">
+            
+            <div class="nav" ng-click="onNavClick('red')">Red</div>
+            <div class="nav" ng-click="onNavClick('green')">Green</div>
+            <div class="nav" ng-click="onNavClick('blue')">Blue</div>
+
+            <div class="content-box" ng-show="redContentVisible">
+
+                <h2>RED</h2>
+                    Food truck gluten-free banksy, fap occupy bespoke whatever mustache. Occupy kogi kale chips chillwave, odd future typewriter iphone twee truffaut viral ethical artisan put a bird on it single-origin coffee banh mi. Master cleanse brunch occupy trust fund marfa yr. Chillwave ennui fap, wes anderson cliche cosby sweater brooklyn vegan organic. Shoreditch PBR semiotics, chillwave art party photo booth terry richardson. Synth ennui semiotics mustache pickled, biodiesel food truck cosby sweater readymade mixtape letterpress pour-over leggings. Food truck freegan vinyl thundercats, post-ironic ennui wes anderson banh mi four loko synth photo booth authentic 3 wolf moon.
+            </div>
+
+            <div class="content-box" ng-show="greenContentVisible">
+                <h2>Green</h2>
+                    Sriracha pinterest sustainable jean shorts vinyl, beard echo park DIY squid mustache cliche artisan cray pickled whatever. Occupy artisan hella letterpress, shoreditch brooklyn umami high life pork belly. Banksy dreamcatcher bushwick keytar, truffaut tofu scenester iphone bespoke marfa four loko forage american apparel blog. DIY umami lo-fi, mlkshk small batch williamsburg cred. Godard shoreditch direct trade ethnic art party. Ethnic williamsburg echo park direct trade, messenger bag whatever 3 wolf moon cosby sweater ennui DIY organic. Quinoa you probably haven't heard of them ennui, trust fund tofu banh mi flexitarian bicycle rights echo park gentrify messenger bag.
+            </div>
+
+            <div class="content-box" ng-show="blueContentVisible">
+                <h2>Blue</h2>
+                Vice DIY biodiesel fingerstache, marfa before they sold out cardigan tumblr kale chips pork belly raw denim mlkshk. Etsy butcher swag, echo park ethnic small batch gentrify. Bicycle rights mustache artisan, keytar lo-fi sustainable fap stumptown vegan salvia freegan four loko terry richardson. Photo booth wes anderson raw denim williamsburg retro. Keffiyeh street art brunch ethical. Swag master cleanse ethical aesthetic. You probably haven't heard of them umami hoodie fixie tofu pickled.
+            </div>
+
+            <!-- Tried to use templating in angular -->
+
+            <!-- <div type="text" ng-repeat="color in colors" ng-mouseleave="hover(color)" ng-mouseenter="hover(color)" ng-show="colors.show">
+                <div>Green</div>
+            </div>  -->
+
+            <!--   <div ng-hide="true" ng-show="currentTab === 'Green'">{{ colors.content }}</div>
+            <div ng-hide="true" ng-show="currentTab === 'Red'">{{ colors.content }}</div>
+            <div ng-hide="true" ng-show="currentTab === 'Blue'">{{ colors.content }}</div> -->
+
+        <div>
+
+
+        </div>
+        
+        <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src="scripts/controllers.js"></script>
+
+    </body>
+</html>
